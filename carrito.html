@@ -1,0 +1,32 @@
+<header class="header-carrito">
+  <div class="logo">🏋️‍♂️ FitPulse</div>
+
+  <div id="cartIcon" class="cart-icon">
+    🛒
+    <div id="cartCount" class="cart-count" style="display: none">0</div>
+  </div>
+</header>
+
+<!-- Modal del carrito -->
+<div id="cartModal" class="cart-modal">
+  <div class="cart-content">
+    <div class="cart-header">
+      <h2>Tu Carrito</h2>
+      <button id="closeCart" class="close-cart">&times;</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <div class="empty-cart">Tu carrito está vacío</div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal" class="cart-total-amount">S/ 0.00</span>
+      </div>
+      <button id="checkoutBtn" class="btn btn-primary" style="width: 100%">
+        Finalizar compra
+      </button>
+    </div>
+  </div>
+</div>

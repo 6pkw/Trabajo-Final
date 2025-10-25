@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FitPulse — Ejercicios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/ejercicios.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container nav">
+        <div class="nav-left">
+          <div class="logo">
+            <div class="brand"><span class="fit">Fit</span>Pulse</div>
+          </div>
+        </div>
+        <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="juego.html">Juego</a>
+          <a href="productos.html">Productos</a>
+          <a href="ejercicios.html" class="active">Ejercicios</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <a class="cta" href="contacto.html">Únete ahora</a>
+      </div>
+    </header>
+
+    <!-- EJERCICIOS -->
+    <section class="section">
+      <div class="container">
+        <h1 style="text-align: center; font-size: 42px; margin: 0 0 40px">
+          Rutinas de Ejercicios
+        </h1>
+
+        <div class="ejercicios-grid">
+          <!-- Video 1 -->
+          <div
+            class="ejercicio-card"
+            onclick="abrirVideo('https://www.youtube.com/embed/C8z8N3183-c')"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://img.youtube.com/vi/C8z8N3183-c/maxresdefault.jpg"
+                alt="Ejercicio 1"
+              />
+              <div class="play-button">▶</div>
+            </div>
+            <h3>Rutina de Fuerza</h3>
+            <p>Desarrolla tu fuerza muscular con estos ejercicios</p>
+          </div>
+
+          <!-- Video 2 -->
+          <div
+            class="ejercicio-card"
+            onclick="abrirVideo('https://www.youtube.com/embed/IE3ZJezh-wc')"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://img.youtube.com/vi/IE3ZJezh-wc/maxresdefault.jpg"
+                alt="Ejercicio 2"
+              />
+              <div class="play-button">▶</div>
+            </div>
+            <h3>Cardio Intenso</h3>
+            <p>Quema calorías y mejora tu resistencia cardiovascular</p>
+          </div>
+
+          <!-- Video 3 -->
+          <div
+            class="ejercicio-card"
+            onclick="abrirVideo('https://www.youtube.com/embed/JoQ6T0dX0mM')"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="https://img.youtube.com/vi/JoQ6T0dX0mM/maxresdefault.jpg"
+                alt="Ejercicio 3"
+              />
+              <div class="play-button">▶</div>
+            </div>
+            <h3>Nutrición Fitness</h3>
+            <p>Aprende a alimentarte correctamente para tus objetivos</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px">
+          <a class="btn dark" href="contacto.html">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para reproducir video -->
+    <div id="videoModal" class="video-modal" onclick="cerrarVideo()">
+      <div class="video-modal-content" onclick="event.stopPropagation()">
+        <span class="close-button" onclick="cerrarVideo()">&times;</span>
+        <iframe
+          id="videoFrame"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        © 2025 FitPulse — Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script src="js/ejercicios.js"></script>
+  </body>
+</html>
